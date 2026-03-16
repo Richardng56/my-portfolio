@@ -1,36 +1,21 @@
 <html lang="en" class="scroll-smooth" style="scroll-padding-top: 80px;">
-<style>
-    /* This ensures that when you click 'About', it stops 100px before the section 
-       so the header doesn't cover the title */
-    html { 
-        scroll-padding-top: 100px; 
-        visibility: hidden; 
-    }
-    html.loaded { visibility: visible; }
-
-    /* Ensure the navbar has a solid background so text doesn't bleed through it */
-    .nav-solid {
-        background-color: #050a12 !important; /* Your Navy 950 color */
-        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Ng | Senior Internal Audit Leader</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        html { visibility: hidden; }
-        html.loaded { visibility: visible; }
-        .fade-up-element {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        /* This ensures that when you click 'About', it stops 100px before the section so the header doesn't cover the title */
+        html { 
+        scroll-padding-top: 100px; 
+        visibility: hidden; 
         }
-        .fade-up-element.is-visible { opacity: 1; transform: translateY(0); }
-        .hero-bg {
-            background-image: linear-gradient(rgba(5, 10, 18, 0.85), rgba(5, 10, 18, 0.95)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
-            background-size: cover; background-position: center; background-attachment: fixed;
+        html.loaded { visibility: visible; }
+
+        /* Ensure the navbar has a solid background so text doesn't bleed through it */
+        .nav-solid {
+            background-color: #050a12 !important; /* Your Navy 950 color */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
         }
     </style>
     <script>
@@ -46,10 +31,12 @@
     </script>
 </head>
 <body class="font-sans text-gray-800 bg-white antialiased">
-
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-navy-950 py-4 shadow-lg">
+    
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 nav-solid">
         <div class="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center">
-            <a href="#" class="font-serif text-2xl font-bold text-white uppercase">RICHARD <span class="text-gold-500">NG</span>.</a>
+            <a href="#" class="font-serif text-2xl font-bold text-white uppercase">
+                RICHARD <span class="text-gold-500">NG</span>.
+            </a>
             <div class="hidden md:flex space-x-8 items-center text-white text-xs font-bold uppercase tracking-widest">
                 <a href="#about" class="hover:text-gold-500">About</a>
                 <a href="#experience" class="hover:text-gold-500">Experience</a>
@@ -59,17 +46,9 @@
         </div>
     </nav>
 
-    <section class="hero-bg min-h-screen flex items-center pt-20">
+    <section class="hero-bg min-h-screen flex items-center pt-32 pb-20">
         <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
-            <div class="fade-up-element max-w-3xl">
-                <p class="text-gold-500 font-bold tracking-[0.4em] uppercase mb-6 flex items-center">
-                    <span class="w-12 h-[2px] bg-gold-500 mr-4"></span> Senior Internal Audit Leader
-                </p>
-                <h1 class="text-5xl md:text-8xl font-serif text-white font-bold uppercase tracking-tighter leading-tight">
-                    Integrity Through <br/><span class="text-gold-500 italic font-normal">Analytical Rigor.</span>
-                </h1>
             </div>
-        </div>
     </section>
 
     <section id="about" class="py-24 lg:py-32 bg-white">
