@@ -99,12 +99,12 @@
                     </div>
                     <div class="mt-12 flex flex-wrap gap-10">
                         <div>
-                            <p class="text-navy-900 font-serif font-bold text-2xl uppercase">CPA (Canada/AU)</p>
+                            <p class="text-navy-900 font-serif font-bold text-2xl uppercase">CPA (Canada)</p>
                             <p class="text-gold-500 text-[10px] font-bold uppercase tracking-widest mt-1">Professional Accreditation</p>
                         </div>
                         <div>
-                            <p class="text-navy-900 font-serif font-bold text-2xl uppercase">BEng (Hons)</p>
-                            <p class="text-gold-500 text-[10px] font-bold uppercase tracking-widest mt-1">Civil Engineering (UK)</p>
+                            <p class="text-navy-900 font-serif font-bold text-2xl uppercase">CPA (Australia)</p>
+                            <p class="text-gold-500 text-[10px] font-bold uppercase tracking-widest mt-1">Professional Accreditation</p>
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@
             <div class="pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-widest font-bold">
                 <p>&copy; 2026 Richard Ng.</p>
                 <div class="flex flex-wrap justify-center gap-8 mt-4 md:mt-0">
-                    <p>CPA (Canada/AU) | CISA | BEng Civil Engineering</p>
+                    <p>CPA (Canada) | CPA (Australia) | CISA | BEng Civil Engineering</p>
                     <a href="https://audit-blog.richardng.com" class="text-gold-500 hover:underline">Internal Audit Blog</a>
                 </div>
             </div>
@@ -270,6 +270,10 @@
                 if (entry.isIntersecting) { entry.target.classList.add('is-visible'); }
             });
         }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
         document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
     </script>
 </body>
