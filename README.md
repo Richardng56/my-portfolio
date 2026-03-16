@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Leuk Ng | Senior Internal Audit Leader</title>
+    <title>Richard Ng | Senior Internal Audit Leader</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     
@@ -61,6 +62,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans text-gray-800 bg-white antialiased overflow-x-hidden">
+    
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex justify-between items-center">
@@ -74,7 +76,9 @@
                     <a href="#cases" class="text-xs font-bold uppercase tracking-widest hover:text-gold-500 transition-colors">Portfolio</a>
                     <a href="#contact" class="px-5 py-2 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white transition-colors text-xs font-bold uppercase tracking-widest">Contact</a>
                 </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
             </div>
         </div>
         <div id="mobile-menu" class="hidden md:hidden bg-navy-950 px-6 py-6 space-y-4">
@@ -110,8 +114,8 @@
                         Bridging <span class="text-gold-500 italic">Engineering Logic</span> with Financial Oversight
                     </h2>
                     <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
-                        <p>A well-rounded Internal Audit professional with extensive experience across financial, operational, taxation, ITGC, and compliance audits. Bringing a strong analytical and structured approach to complex business challenges, supported by an academic foundation in Civil Engineering from the UK.</p>
-                        <p>Recognized as a fast and adaptable learner, with the ability to navigate evolving business environments and strengthen corporate governance frameworks. Proven capability to support regulatory compliance while identifying opportunities to enhance operational efficiency and risk management across diverse industries.</p>
+                        <p>A well-rounded Internal Audit professional with extensive experience across financial, operational, taxation, ITGC, and compliance audits. Bringing a strong analytical and structured approach to complex business challenges, supported by an academic foundation in Civil Engineering.</p>
+                        <p>Recognized as a fast and adaptable learner, with the ability to navigate evolving business environments and strengthen corporate governance frameworks. Proven capability to support regulatory compliance while identifying opportunities to enhance operational efficiency.</p>
                     </div>
                     <div class="grid grid-cols-2 gap-8 mt-12">
                         <div>
@@ -126,9 +130,7 @@
                 </div>
                 <div class="fade-up-element order-1 lg:order-2">
                     <div class="relative max-w-md mx-auto">
-                        <div class="aspect-[4/5] bg-gray-100 overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" class="w-full h-full object-cover grayscale" alt="Professional Portrait">
-                        </div>
+                        <img src="office.png" class="w-full h-full object-cover grayscale" alt="Professional Portrait">
                     </div>
                 </div>
             </div>
@@ -152,7 +154,7 @@
                 </div>
                 <div class="expertise-card p-10 bg-white border-t-[6px] border-t-navy-900 fade-up-element shadow-sm">
                     <h3 class="text-xl font-serif font-bold text-navy-900 mb-4 uppercase">Forensics</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">High-stakes fraud investigation, big rigging, and procurement kickback detection.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">High-stakes fraud investigation, bid rigging, and procurement kickback detection.</p>
                 </div>
             </div>
         </div>
@@ -171,7 +173,7 @@
                     <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">AUG 2024 - PRESENT</p>
                     <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Strategic Sabbatical & Upskilling</h3>
                     <p class="text-gray-400 text-sm mb-4 italic">Vancouver, Canada</p>
-                    <p class="text-gray-400 text-sm leading-relaxed">Dedicated to international relocation, advanced technical training (CISA, AI Prompting), and industry thought leadership via bi-monthly professional blogging.</p>
+                    <p class="text-gray-400 text-sm leading-relaxed">Dedicated to international relocation, advanced technical training (CISA, AI Prompting), and industry thought leadership.</p>
                 </div>
 
                 <div class="relative fade-up-element">
@@ -180,9 +182,9 @@
                     <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Senior Internal Audit Manager</h3>
                     <p class="text-gold-500 text-sm mb-4 italic">Sa Sa International Holdings Ltd. (SEHK: 178)</p>
                     <ul class="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm">
-                        <li>Led Group IA oversight for PRC, HK, Macau, and Malaysia, presenting directly to audit and risk committees.</li>
-                        <li>Relaunched 200+ global retail store audits post-COVID, redefining methodologies.</li>
-                        <li>Established the corporate Risk, Business Continuity, and Crisis Management framework.</li>
+                        <li>Led Group IA oversight for PRC, HK, Macau, and Malaysia.</li>
+                        <li>Relaunched 200+ global retail store audits post-COVID.</li>
+                        <li>Established corporate Risk and Crisis Management frameworks.</li>
                     </ul>
                 </div>
 
@@ -192,28 +194,9 @@
                     <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Internal Audit Manager</h3>
                     <p class="text-gold-500 text-sm mb-4 italic">Lee Kum Kee Group</p>
                     <ul class="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm">
-                        <li>Reported 30+ findings covering procurement, sales, and QA.</li>
-                        <li>Revamped in-house engineering policy leveraging civil engineering background for safety.</li>
+                        <li>Reported 30+ findings covering procurement and QA.</li>
+                        <li>Revamped in-house engineering policy leveraging technical background.</li>
                     </ul>
-                </div>
-
-                <div class="relative fade-up-element">
-                    <div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-3 h-3 bg-white/30 rounded-full"></div>
-                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">MAY 2012 - AUG 2021</p>
-                    <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Senior Internal Audit Officer</h3>
-                    <p class="text-gold-500 text-sm mb-4 italic">Crystal Intl. Group Ltd. (SEHK: 2232)</p>
-                    <ul class="list-disc list-outside ml-4 space-y-2 text-gray-400 text-sm">
-                        <li>Saved hundreds of thousands of HKD annually in Big 4 professional fees through M&A valuation analysis.</li>
-                        <li>Improved factory performance by USD 1M via Material Utilization (MU) refinement suggestions.</li>
-                        <li>Conducted highly sensitive independent investigations into whistleblowing cases, exposing massive conflicts of interest.</li>
-                    </ul>
-                </div>
-
-                <div class="relative fade-up-element">
-                    <div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-3 h-3 bg-white/10 rounded-full"></div>
-                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2007 - 2012</p>
-                    <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Early Career: BDO & KPMG</h3>
-                    <p class="text-gray-400 text-sm">Foundational rigorous training in external audit, US SOX control testing, and IPO project management.</p>
                 </div>
             </div>
         </div>
@@ -228,25 +211,22 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
-    <div class="overflow-hidden mb-6 aspect-video bg-gray-100">
-        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover grayscale transform hover:scale-105 transition-transform duration-500" alt="Construction Site Audit">
-    </div>
-    <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Conflict of Interest</h4>
-    <p class="text-gray-600 text-sm leading-relaxed">Investigation into a factory construction project revealing a consultant acting as a vendor for $3.3M M&E equipment without CFO authorization.</p>
-</div>
-                    <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Conflict of Interest</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Revealed an unauthorized vendor relationship and lack of independent cost benchmarking for a $3.3M construction project.</p>
-                </div>
-                <div class="fade-up-element">
                     <div class="bg-gray-200 aspect-video mb-6 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1740&auto=format&fit=crop" class="w-full h-full object-cover grayscale" alt="NIST">
+                        <img src="capex.png" class="w-full h-full object-cover grayscale transform hover:scale-105 transition-transform duration-500" alt="Conflict of Interest">
+                    </div>
+                    <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Conflict of Interest</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Investigation into a factory construction project revealing a consultant acting as a vendor for $3.3M M&E equipment without CFO authorization.</p>
+                </div>
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
+                    <div class="bg-gray-200 aspect-video mb-6 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1740&auto=format&fit=crop" class="w-full h-full object-cover grayscale transform hover:scale-105 transition-transform duration-500" alt="NIST">
                     </div>
                     <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">NIST Framework Audit</h4>
                     <p class="text-gray-600 text-sm leading-relaxed">Executed ITGC audits identifying critical gaps in data encryption and incident response protocols.</p>
                 </div>
-                <div class="fade-up-element">
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
                     <div class="bg-gray-200 aspect-video mb-6 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1740&auto=format&fit=crop" class="w-full h-full object-cover grayscale" alt="Fraud">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1740&auto=format&fit=crop" class="w-full h-full object-cover grayscale transform hover:scale-105 transition-transform duration-500" alt="Fraud">
                     </div>
                     <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Unauthorized Funds</h4>
                     <p class="text-gray-600 text-sm leading-relaxed">Exposed an unauthorized petty cash pool for unrecorded vendor sponsorships totaling over RMB 1 Million.</p>
@@ -264,28 +244,19 @@
                     </a>
                     <p class="text-gray-400 text-base max-w-sm">Bridging rigorous compliance with modern efficiency. Ready to provide strategic internal audit leadership.</p>
                 </div>
-                
                 <div class="lg:col-span-4">
                     <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-8">Contact</h4>
                     <div class="space-y-6 text-gray-400">
                         <div class="flex items-start gap-4">
                             <span class="text-gold-500 mt-1">📞</span>
-                            <p class="text-sm leading-relaxed">
-                                +1 236-889-7868 (CA)<br>
-                                +852 6484-2159 (HK)
-                            </p>
+                            <p class="text-sm leading-relaxed">+1 236-889-7868 (CA)<br>+852 6484-2159 (HK)</p>
                         </div>
                         <div class="flex items-center gap-4">
                             <span class="text-gold-500">✉️</span>
                             <a href="mailto:leukng@gmail.com" class="text-sm hover:text-white transition-colors">leukng@gmail.com</a>
                         </div>
-                        <div class="flex items-center gap-4">
-                            <span class="text-gold-500">🌐</span>
-                            <a href="https://internalauditnote.blogspot.com" target="_blank" class="text-sm hover:text-white transition-colors">Internal Audit Blog</a>
-                        </div>
                     </div>
                 </div>
-
                 <div class="lg:col-span-3">
                     <h4 class="text-white font-bold uppercase tracking-widest text-xs mb-8">Locations</h4>
                     <ul class="space-y-4 text-gray-400 text-sm">
@@ -294,20 +265,18 @@
                     </ul>
                 </div>
             </div>
-
             <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em]">
-                <p>© 2026 RICHARD LEUK NG. ALL RIGHTS RESERVED.</p>
+                <p>© 2026 RICHARD NG. ALL RIGHTS RESERVED.</p>
                 <div class="flex gap-6 mt-4 md:mt-0">
-                    <span>CPA (CA/AU)</span>
+                    <span>CPA (CA/HK)</span>
                     <span>CISA</span>
-                    <span>CIVIL ENGINEERING (BEng)(</span>
+                    <span>CIVIL ENGINEERING (BEng)</span>
                 </div>
             </div>
         </div>
     </footer>
 
     <script>
-        // Navbar scroll effect
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -319,12 +288,10 @@
             }
         });
 
-        // Mobile Menu toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
 
-        // Scroll animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) entry.target.classList.add('is-visible');
