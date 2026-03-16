@@ -1,192 +1,210 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Ng | Senior Internal Audit Leader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: { 950: '#050a12', 900: '#0a1424', 800: '#11223c' },
-                        gold: { 400: '#dfc095', 500: '#cda873', 600: '#b89565' }
-                    },
-                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
-                }
-            }
-        }
-    </script>
-
     <style>
-        .fade-up-element {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        /* --- ALL STYLING INCLUDED HERE TO PREVENT COLLAPSE --- */
+        :root {
+            --navy: #050a12;
+            --gold: #cda873;
+            --gold-hover: #b89565;
+            --white: #ffffff;
+            --gray-bg: #f8f9fa;
+            --text-main: #333333;
+            --text-muted: #666666;
         }
-        .fade-up-element.is-visible { opacity: 1; transform: translateY(0); }
-        .hero-bg {
-            background-image: linear-gradient(rgba(5, 10, 18, 0.7), rgba(5, 10, 18, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--text-main); line-height: 1.6; background: var(--white); }
+
+        /* Navigation */
+        nav { position: absolute; width: 100%; padding: 30px 5%; display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+        .logo { font-family: 'Playfair Display', serif; color: var(--white); font-size: 1.5rem; text-decoration: none; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
+        .logo span { color: var(--gold); }
+        .nav-links a { color: var(--white); text-decoration: none; margin-left: 30px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--gold); }
+
+        /* Hero */
+        .hero { 
+            height: 100vh; 
+            background: linear-gradient(rgba(5, 10, 18, 0.75), rgba(5, 10, 18, 0.85)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
             background-size: cover; background-position: center;
+            display: flex; align-items: center; padding: 0 10%; color: var(--white);
         }
-        .expertise-card { transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-        .expertise-card:hover {
-            transform: translateY(-10px);
-            border-top-color: #cda873 !important;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        .hero-content { max-width: 850px; }
+        .tagline { color: var(--gold); text-transform: uppercase; font-weight: bold; letter-spacing: 4px; margin-bottom: 20px; display: flex; align-items: center; font-size: 0.85rem; }
+        .tagline::before { content: ""; width: 40px; height: 2px; background: var(--gold); margin-right: 15px; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 8vw, 5rem); line-height: 1.1; margin-bottom: 30px; text-transform: uppercase; }
+        .hero h1 span { color: var(--gold); font-style: italic; font-weight: 400; }
+        .hero p { font-size: 1.15rem; color: #cccccc; margin-bottom: 40px; max-width: 650px; }
+
+        /* Buttons */
+        .btn-group { display: flex; gap: 20px; flex-wrap: wrap; }
+        .btn { padding: 18px 35px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; transition: 0.3s; display: inline-block; border: 1px solid var(--gold); }
+        .btn-gold { background: var(--gold); color: var(--white); border: none; }
+        .btn-outline { color: var(--white); border-color: var(--white); }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .btn-gold:hover { background: var(--gold-hover); }
+
+        /* Sections */
+        section { padding: 120px 10%; }
+        .section-header { text-align: center; margin-bottom: 80px; }
+        .section-header h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; text-transform: uppercase; color: var(--navy); margin-bottom: 15px; }
+        .title-line { width: 60px; height: 4px; background: var(--gold); margin: 0 auto; }
+
+        /* Professional Experience (Grid based on your photos) */
+        .experience-item { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 40px 0; border-bottom: 1px solid #eeeeee; }
+        .experience-item:last-child { border-bottom: none; }
+        .exp-meta { color: var(--gold); font-weight: bold; font-size: 0.85rem; letter-spacing: 2px; }
+        .exp-info h3 { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: var(--navy); margin-bottom: 5px; }
+        .exp-role { text-transform: uppercase; font-size: 0.75rem; font-weight: bold; color: var(--text-muted); letter-spacing: 1.5px; margin-bottom: 15px; }
+        .exp-desc { color: var(--text-muted); font-size: 1rem; }
+
+        /* Project Highlights (3-Column) */
+        .highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .project-card { border-top: 4px solid var(--gold); padding-top: 25px; background: #ffffff; padding: 30px; border-radius: 2px; box-shadow: 0 5px 15px rgba(0,0,0,0.02); }
+        .project-num { color: var(--gold); font-weight: bold; font-size: 1.1rem; margin-bottom: 10px; display: block; }
+        .project-card h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 15px; text-transform: uppercase; color: var(--navy); }
+        .project-card p { font-size: 0.95rem; color: var(--text-muted); }
+
+        /* Footer */
+        footer { background: var(--navy); color: var(--white); padding: 120px 10% 40px; }
+        .footer-cta { text-align: center; margin-bottom: 100px; }
+        .footer-cta h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 4rem); margin-bottom: 40px; text-transform: uppercase; }
+        .footer-cta h2 span { color: var(--gold); font-style: italic; }
+
+        .location-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 60px; margin-bottom: 60px; }
+        .loc-item h4 { color: var(--gold); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; margin-bottom: 15px; }
+        .loc-item p { font-size: 1.8rem; font-family: 'Playfair Display', serif; font-weight: bold; }
+        .loc-sub { font-size: 0.75rem; color: #888888; text-transform: uppercase; margin-top: 8px; font-weight: bold; letter-spacing: 1px; }
+
+        .bottom-bar { display: flex; justify-content: space-between; align-items: center; font-size: 0.7rem; color: #555555; text-transform: uppercase; letter-spacing: 1.5px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; flex-wrap: wrap; gap: 20px; }
+        .bottom-bar a { color: var(--gold); text-decoration: none; border-bottom: 1px solid transparent; }
+        .bottom-bar a:hover { border-bottom: 1px solid var(--gold); }
+
+        /* Responsive Fixes */
+        @media (max-width: 900px) {
+            .experience-item, .location-grid { grid-template-columns: 1fr; gap: 20px; }
+            .location-grid div { text-align: left !important; }
+            nav .nav-links { display: none; }
         }
     </style>
 </head>
-<body class="font-sans text-gray-800 bg-white antialiased">
+<body>
 
-    <nav class="absolute top-0 left-0 w-full z-50 py-8">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex justify-between items-center">
-                <a href="#" class="font-serif text-2xl font-bold tracking-wider text-white uppercase">RICHARD <span class="text-gold-500">NG</span>.</a>
-                <div class="hidden md:flex space-x-10 items-center">
-                    <a href="#about" class="text-xs font-bold text-white hover:text-gold-500 transition-colors uppercase tracking-[0.2em]">About</a>
-                    <a href="#expertise" class="text-xs font-bold text-white hover:text-gold-500 transition-colors uppercase tracking-[0.2em]">Expertise</a>
-                    <a href="#experience" class="text-xs font-bold text-white hover:text-gold-500 transition-colors uppercase tracking-[0.2em]">Experience</a>
-                    <a href="https://audit-blog.richardng.com" class="text-xs font-bold text-gold-500 hover:text-white transition-colors uppercase tracking-[0.2em]">Internal Audit Blog</a>
-                </div>
-            </div>
+    <nav>
+        <a href="#" class="logo">RICHARD <span>NG</span>.</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Highlights</a>
+            <a href="https://audit-blog.richardng.com">Audit Blog</a>
         </div>
     </nav>
 
-    <section class="hero-bg min-h-screen flex items-center relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full z-10">
-            <div class="fade-up-element max-w-4xl pt-20">
-                <p class="text-gold-500 font-bold tracking-[0.4em] uppercase mb-6 flex items-center"><span class="w-12 h-[2px] bg-gold-500 mr-4"></span> Senior Internal Audit Leader</p>
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-white font-bold leading-tight mb-8 uppercase tracking-tighter">Integrity <br/>Through <br/><span class="text-gold-500 italic font-normal">Analytical Rigor.</span></h1>
-                <p class="text-gray-300 text-lg max-w-3xl mb-12 leading-relaxed">A well-rounded Internal Audit professional with extensive experience across financial, operational, taxation, ITGC, and compliance audits. Bringing a strong analytical and structured approach to complex business challenges, supported by an academic foundation in Civil Engineering from the UK.</p>
-                <div class="flex flex-col sm:flex-row gap-6">
-                    <a href="#experience" class="px-10 py-5 bg-gold-500 text-white text-xs font-bold uppercase tracking-widest hover:bg-gold-600 transition-all text-center">Professional Journey</a>
-                    <a href="mailto:leukng@gmail.com" class="px-10 py-5 bg-transparent border border-white text-white text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-navy-900 transition-all text-center">Contact Richard</a>
-                </div>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tagline">Senior Internal Audit Leader</div>
+            <h1>Integrity Through <br><span>Analytical Rigor.</span></h1>
+            <p>A well-rounded Internal Audit professional with extensive experience across financial, operational, taxation, and ITGC audits. Supported by an academic foundation in Civil Engineering from the UK.</p>
+            <div class="btn-group">
+                <a href="#experience" class="btn btn-gold">Professional Journey</a>
+                <a href="mailto:leukng@gmail.com" class="btn btn-outline">Contact Richard</a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div class="fade-up-element">
-                    <h2 class="text-4xl md:text-5xl font-serif text-navy-900 font-bold mb-8 uppercase leading-tight">Evolving <span class="text-gold-500 italic">Governance</span> for Efficiency</h2>
-                    <p class="text-lg text-gray-600 leading-relaxed mb-6">Recognized as a fast and adaptable learner, with the ability to navigate evolving business environments and strengthen corporate governance frameworks.</p>
-                    <p class="text-lg text-gray-600 leading-relaxed">Proven capability to support regulatory compliance while identifying opportunities to enhance operational efficiency and risk management across diverse industries.</p>
-                    <div class="mt-12 flex flex-wrap gap-10">
-                        <div><p class="text-navy-900 font-serif font-bold text-2xl uppercase">CPA (Canada)</p><p class="text-gold-500 text-[10px] font-bold uppercase tracking-widest">Accreditation</p></div>
-                        <div><p class="text-navy-900 font-serif font-bold text-2xl uppercase">CPA (Australia)</p><p class="text-gold-500 text-[10px] font-bold uppercase tracking-widest">Accreditation</p></div>
-                    </div>
-                </div>
-                <div class="fade-up-element relative">
-                    <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" class="w-full h-auto grayscale rounded-sm shadow-2xl" alt="Richard Ng">
-                </div>
+    <section id="experience">
+        <div class="section-header">
+            <h2>Professional Experience</h2>
+            <div class="title-line"></div>
+        </div>
+        
+        <div class="experience-item">
+            <div class="exp-meta">2023 — 2024</div>
+            <div class="exp-info">
+                <h3>Sa Sa International Holdings Ltd.</h3>
+                <div class="exp-role">Senior Internal Audit Manager</div>
+                <p class="exp-desc">Directed audit functions across Hong Kong, PRC, Macau, and Malaysia. Modernized retail protocols and inventory controls for multi-regional operations, enhancing operational transparency.</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-meta">2021 — 2023</div>
+            <div class="exp-info">
+                <h3>Lee Kum Kee Group</h3>
+                <div class="exp-role">Internal Audit Manager</div>
+                <p class="exp-desc">Leveraged engineering background to revamp group-wide procurement and manufacturing quality assurance policies through comprehensive cross-functional risk assessment.</p>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-meta">2007 — 2012</div>
+            <div class="exp-info">
+                <h3>External Audit Foundations</h3>
+                <div class="exp-role">Auditor / Senior Auditor | BDO & KPMG</div>
+                <p class="exp-desc">Rigorous training in financial reporting standards, IPO readiness, and internal control testing (US SOX) for multinational clients across diverse industry sectors.</p>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-32 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2 class="text-4xl font-serif text-navy-900 font-bold mb-20 uppercase tracking-tighter text-center">Professional Experience</h2>
-            <div class="space-y-16">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-200 pb-12 fade-up-element">
-                    <div>
-                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">2023 - 2024</p>
-                        <h3 class="text-2xl font-serif font-bold text-navy-900 mt-2">Sa Sa International</h3>
-                    </div>
-                    <div class="md:col-span-2">
-                        <p class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">Senior Internal Audit Manager</p>
-                        <p class="text-gray-600 leading-relaxed">Directed audit functions across Hong Kong, PRC, Macau, and Malaysia. Modernized retail protocols and inventory controls for multi-regional operations.</p>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 border-b border-gray-200 pb-12 fade-up-element">
-                    <div>
-                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">2021 - 2023</p>
-                        <h3 class="text-2xl font-serif font-bold text-navy-900 mt-2">Lee Kum Kee Group</h3>
-                    </div>
-                    <div class="md:col-span-2">
-                        <p class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">Internal Audit Manager</p>
-                        <p class="text-gray-600 leading-relaxed">Revamped group-wide procurement and manufacturing QA policies through comprehensive risk assessment and engineering logic.</p>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 fade-up-element">
-                    <div>
-                        <p class="text-gold-500 font-bold text-xs uppercase tracking-widest">2007 - 2012</p>
-                        <h3 class="text-2xl font-serif font-bold text-navy-900 mt-2">External Audit Foundations</h3>
-                    </div>
-                    <div class="md:col-span-2">
-                        <p class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4 text-gold-600">BDO & KPMG | Senior Auditor</p>
-                        <p class="text-gray-600 leading-relaxed">Rigorous training in financial reporting standards, IPO readiness, and internal control testing (US SOX) for multinational clients.</p>
-                    </div>
-                </div>
+    <section id="projects" style="background-color: var(--gray-bg);">
+        <div class="section-header">
+            <h2>Strategic Project Highlights</h2>
+            <div class="title-line"></div>
+        </div>
+
+        <div class="highlights-grid">
+            <div class="project-card">
+                <span class="project-num">01.</span>
+                <h4>Supply Chain Resilience</h4>
+                <p>Conducted factory-to-retail audits across APAC production hubs, identifying critical bottlenecks and strengthening vendor compliance protocols.</p>
+            </div>
+            <div class="project-card">
+                <span class="project-num">02.</span>
+                <h4>ITGC Implementation</h4>
+                <p>Led the rollout of COBIT-aligned IT General Controls for ERP transitions, ensuring data integrity during major system migrations.</p>
+            </div>
+            <div class="project-card">
+                <span class="project-num">03.</span>
+                <h4>Bid Rigging Detection</h4>
+                <p>Developed forensic analytical tools to identify pattern-based fraud in high-value procurement contracts for manufacturing entities.</p>
             </div>
         </div>
     </section>
 
-    <section class="py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2 class="text-4xl font-serif text-navy-900 font-bold mb-20 uppercase tracking-tighter text-center">Strategic Project Highlights</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="fade-up-element">
-                    <p class="text-gold-500 font-bold mb-2">01.</p>
-                    <h4 class="text-lg font-serif font-bold text-navy-900 mb-3">Supply Chain Resilience</h4>
-                    <p class="text-sm text-gray-600 leading-relaxed">Conducted factory-to-retail audits across APAC production hubs, identifying bottlenecks and strengthening vendor compliance.</p>
-                </div>
-                <div class="fade-up-element">
-                    <p class="text-gold-500 font-bold mb-2">02.</p>
-                    <h4 class="text-lg font-serif font-bold text-navy-900 mb-3">ITGC Implementation</h4>
-                    <p class="text-sm text-gray-600 leading-relaxed">Led COBIT-aligned IT General Controls for ERP transitions, ensuring data integrity during major system migrations.</p>
-                </div>
-                <div class="fade-up-element">
-                    <p class="text-gold-500 font-bold mb-2">03.</p>
-                    <h4 class="text-lg font-serif font-bold text-navy-900 mb-3">Bid Rigging Detection</h4>
-                    <p class="text-sm text-gray-600 leading-relaxed">Developed forensic analytical tools to identify pattern-based fraud in high-value procurement contracts.</p>
-                </div>
+    <footer>
+        <div class="footer-cta">
+            <h2>Secure Your <br><span>Financial Integrity.</span></h2>
+            <a href="mailto:leukng@gmail.com" class="btn btn-gold">leukng@gmail.com</a>
+        </div>
+
+        <div class="location-grid">
+            <div class="loc-item">
+                <h4>Current Hub</h4>
+                <p>Vancouver, Canada</p>
+                <div class="loc-sub">CPA (Canada) Member</div>
+            </div>
+            <div class="loc-item" style="text-align: right;">
+                <h4>Operational Base</h4>
+                <p>Hong Kong SAR</p>
+                <div class="loc-sub">Audit Specialist (APAC Region)</div>
             </div>
         </div>
-    </section>
 
-    <footer class="bg-navy-950 text-white pt-32 pb-12 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl md:text-7xl font-serif font-bold uppercase mb-12 tracking-tighter">Secure Your <br><span class="text-gold-500 italic">Financial Integrity.</span></h2>
-                <a href="mailto:leukng@gmail.com" class="px-12 py-5 bg-gold-500 text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-gold-600 transition-all inline-block">leukng@gmail.com</a>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/10 pt-16 mb-16">
-                <div class="text-center md:text-left">
-                    <h4 class="text-gold-500 text-xs font-bold uppercase tracking-[0.2em] mb-4">Current Hub</h4>
-                    <p class="text-2xl font-serif font-bold">Vancouver, Canada</p>
-                    <p class="text-gray-500 text-xs mt-2 font-bold">CPA (Canada) Member</p>
-                </div>
-                <div class="text-center md:text-right">
-                    <h4 class="text-gold-500 text-xs font-bold uppercase tracking-[0.2em] mb-4">Operational Base</h4>
-                    <p class="text-2xl font-serif font-bold">Hong Kong SAR</p>
-                    <p class="text-gray-500 text-xs mt-2 font-bold">Audit Specialist (APAC)</p>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 font-bold uppercase tracking-widest border-t border-white/5 pt-12">
-                <p>&copy; 2026 Richard Ng.</p>
-                <div class="flex gap-8 mt-4 md:mt-0">
-                    <p>CPA (Canada) | CPA (Australia) | CISA | BEng (Hons)</p>
-                    <a href="https://audit-blog.richardng.com" class="text-gold-500 hover:underline">Audit Blog</a>
-                </div>
+        <div class="bottom-bar">
+            <p>&copy; 2026 Richard Ng.</p>
+            <div>
+                CPA (Canada) | CPA (Australia) | CISA | BEng (Hons) &nbsp;&nbsp; | &nbsp;&nbsp; 
+                <a href="https://audit-blog.richardng.com">Internal Audit Blog</a>
             </div>
         </div>
     </footer>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('is-visible'); });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
