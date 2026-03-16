@@ -227,10 +227,13 @@
                 <div class="w-20 h-1.5 bg-gold-500 mx-auto mt-6"></div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="fade-up-element">
-                    <div class="bg-gray-200 aspect-video mb-6 overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover grayscale" alt="CAPEX">
-                    </div>
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
+    <div class="overflow-hidden mb-6 aspect-video bg-gray-100">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover grayscale transform hover:scale-105 transition-transform duration-500" alt="Construction Site Audit">
+    </div>
+    <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Conflict of Interest</h4>
+    <p class="text-gray-600 text-sm leading-relaxed">Investigation into a factory construction project revealing a consultant acting as a vendor for $3.3M M&E equipment without CFO authorization.</p>
+</div>
                     <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Conflict of Interest</h4>
                     <p class="text-gray-600 text-sm leading-relaxed">Revealed an unauthorized vendor relationship and lack of independent cost benchmarking for a $3.3M construction project.</p>
                 </div>
