@@ -297,9 +297,9 @@
             <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em]">
                 <p>© 2026 RICHARD LEUK NG. ALL RIGHTS RESERVED.</p>
                 <div class="flex gap-6 mt-4 md:mt-0">
-                    <span>CPA (CA/AU/HK)</span>
+                    <span>CPA (CA/AU)</span>
                     <span>CISA</span>
-                    <span>CIVIL ENGINEERING</span>
+                    <span>CIVIL ENGINEERING (BEng)(</span>
                 </div>
             </div>
         </div>
