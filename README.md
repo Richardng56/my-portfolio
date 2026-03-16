@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Ng | Senior Internal Audit Leader</title>
+    <title>Richard Leuk Ng | Senior Internal Audit Manager</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -95,7 +95,7 @@
     <section class="hero-bg min-h-screen flex items-center relative pt-20">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full z-10">
             <div class="max-w-3xl fade-up-element">
-                <p class="text-gold-500 font-medium tracking-[0.2em] uppercase mb-4">Senior Internal Audit Leader</p>
+                <p class="text-gold-500 font-medium tracking-[0.2em] uppercase mb-4">Senior Internal Audit Manager</p>
                 <h1 class="text-5xl md:text-6xl lg:text-7xl font-serif text-white font-bold leading-tight mb-6">
                     Guardian of Compliance. <br/>
                     <span class="text-gray-400 italic font-normal">Architect of Efficiency.</span>
@@ -133,7 +133,7 @@
                         </div>
                         <div>
                             <p class="text-gold-500 font-bold text-xl font-serif">CISA</p>
-                            <p class="text-sm text-gray-500 font-medium">Certified Info Systems Auditor</p>
+                            <p class="text-sm text-gray-500 font-medium">Exam Passed</p>
                         </div>
                         <div>
                             <p class="text-gold-500 font-bold text-xl font-serif">AI Prompting</p>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="fade-up-element relative">
                     <div class="absolute inset-0 bg-gold-500 translate-x-4 translate-y-4"></div>
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Professional Office Environment" class="relative z-10 w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
+                    <img src="office.png" alt="Professional Office Environment" class="relative z-10 w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-xl">
                 </div>
             </div>
         </div>
@@ -175,4 +175,51 @@
                     <h3 class="text-xl font-serif font-bold text-navy-900 mb-3 group-hover:text-gold-500 transition-colors">Operational Audit</h3>
                     <p class="text-gray-600 leading-relaxed text-sm">Deep-dive analyses into CAPEX, MU refinements, and procurement. Proven track record of generating $1M+ performance improvements and massive fee savings.</p>
                 </div>
-                <div class="bg-white p-
+                <div class="bg-white p-10 border-t-4 border-navy-900 shadow-sm hover:shadow-xl transition-all duration-300 group fade-up-element cursor-default">
+                    <div class="w-12 h-12 bg-navy-50 text-gold-500 flex items-center justify-center rounded mb-6 group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy-900 mb-3 group-hover:text-gold-500 transition-colors">ITGC & Tech</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">Evaluating cybersecurity measures based on NIST. Proficient in SAP, Power BI, Generative AI & LLM, enabling digital transformation in audit workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-navy-900 text-gray-300 relative">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 fade-up-element">
+                <h2 class="text-4xl md:text-5xl font-serif text-white font-bold mb-4">Professional Experience</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto"></div>
+            </div>
+            <div class="space-y-12 border-l-2 border-gold-500/30 pl-8 md:pl-12 relative">
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 bg-gold-500 rounded-full border-4 border-navy-900"></div>
+                    <p class="text-gold-500 text-sm font-bold tracking-widest uppercase mb-1">Aug 2024 - Present</p>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-1">Strategic Sabbatical & Upskilling</h3>
+                    <p class="text-gray-400 font-medium mb-3">Vancouver, Canada</p>
+                    <p class="text-sm leading-relaxed mb-2">Dedicated to international relocation, advanced technical training (CISA, AI Prompting), and industry thought leadership via bi-monthly professional blogging.</p>
+                </div>
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 bg-navy-700 rounded-full border-2 border-gold-500/50"></div>
+                    <p class="text-gold-500 text-sm font-bold tracking-widest uppercase mb-1">Jan 2023 - Jun 2024</p>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-1">Senior Internal Audit Manager</h3>
+                    <p class="text-gray-400 font-medium mb-3">Sa Sa International Holdings Ltd. (SEHK: 178)</p>
+                    <ul class="list-disc list-outside ml-4 space-y-2 text-sm">
+                        <li>Led Group IA oversight for PRC, HK, Macau, and Malaysia, presenting directly to audit and risk committees.</li>
+                        <li>Relaunched 200+ global retail store audits post-COVID, redefining methodologies.</li>
+                        <li>Established the corporate Risk, Business Continuity, and Crisis Management framework.</li>
+                    </ul>
+                </div>
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 bg-navy-700 rounded-full border-2 border-gold-500/50"></div>
+                    <p class="text-gold-500 text-sm font-bold tracking-widest uppercase mb-1">Aug 2021 - Jan 2023</p>
+                    <h3 class="text-2xl font-serif font-bold text-white mb-1">Internal Audit Manager</h3>
+                    <p class="text-gray-400 font-medium mb-3">Lee Kum Kee Group</p>
+                    <ul class="list-disc list-outside ml-4 space-y-2 text-sm">
+                        <li>Reported 30+ findings covering procurement, sales, and QA.</li>
+                        <li>Revamped in-house engineering policy leveraging civil engineering background for safety.</li>
+                    </ul>
+                </div>
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 bg-navy-70
