@@ -38,14 +38,6 @@
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0a1424; }
         ::-webkit-scrollbar-thumb { background: #cda873; }
-
-        /* Fix for desktop image scaling */
-        .img-container {
-            position: relative;
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-        }
     </style>
 
     <script>
@@ -63,6 +55,7 @@
                 }
             }
         }
+        // Force visibility once the window loads
         window.addEventListener('load', function() {
             document.documentElement.classList.add('loaded');
         });
@@ -72,10 +65,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans text-gray-800 bg-white antialiased overflow-x-hidden">
+<body class="font-sans text-gray-800 bg-white antialiased">
 
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <a href="#" class="font-serif text-2xl font-bold tracking-wider text-white uppercase">
                     RICHARD <span class="text-gold-500">NG</span>.
@@ -101,17 +94,17 @@
         </div>
     </nav>
 
-    <section class="hero-bg min-h-screen flex items-center relative py-20">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full z-10">
-            <div class="fade-up-element max-w-3xl">
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full z-10">
+            <div class="fade-up-element max-w-4xl">
                 <p class="text-gold-500 font-bold tracking-[0.4em] uppercase mb-6 flex items-center">
                     <span class="w-12 h-[2px] bg-gold-500 mr-4"></span> Senior Internal Audit Leader
                 </p>
-                <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif text-white font-bold leading-[1.1] mb-8 uppercase tracking-tighter">
+                <h1 class="text-6xl md:text-8xl font-serif text-white font-bold leading-[1.1] mb-8 uppercase tracking-tighter">
                     Integrity <br/>Through <br/>
                     <span class="text-gold-500 italic font-normal">Analytical Rigor.</span>
                 </h1>
-                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
+                <p class="text-gray-400 text-xl max-w-2xl mb-12 leading-relaxed">
                     Protecting enterprise value through forensic precision, technical excellence in ITGC, and a structural approach to global governance.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6">
@@ -122,16 +115,16 @@
         </div>
     </section>
 
-    <section id="about" class="py-24 lg:py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-                <div class="fade-up-element order-2 lg:order-1">
+    <section id="about" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="fade-up-element">
                     <h2 class="text-4xl md:text-5xl font-serif text-navy-900 font-bold mb-8 uppercase leading-tight">
                         Bridging <span class="text-gold-500 italic">Engineering Logic</span> with Financial Oversight
                     </h2>
                     <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
                         <p>With a foundation in Civil Engineering from the UK, I approach Internal Audit as a structural challenge. My methodology ensures that governance frameworks are built to withstand the pressures of volatile global markets.</p>
-                        <p>Over 17 years of experience—spanning from Big 4 public practice (KPMG/BDO) to leading audit functions for multi-billion dollar listed entities—has equipped me with the foresight to detect risks before they manifest.</p>
+                        <p>Over 17 years of experience—spanning from Big 4 public practice (KPMG/BDO) to leading audit functions for multi-billion dollar listed entities—has equipped me with the foresight to detect risks before they manifest as liabilities.</p>
                     </div>
                     <div class="grid grid-cols-2 gap-8 mt-12">
                         <div>
@@ -144,24 +137,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="fade-up-element order-1 lg:order-2">
-                    <div class="img-container">
-                        <div class="aspect-[4/5] bg-gray-100 overflow-hidden rounded-sm shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Professional Portrait">
-                        </div>
+                <div class="relative fade-up-element">
+                    <div class="aspect-[4/5] bg-gray-100 overflow-hidden rounded-sm">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" alt="Professional Portrait">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="expertise" class="py-24 lg:py-32 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="expertise" class="py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-20 fade-up-element">
                 <h2 class="text-4xl md:text-5xl font-serif text-navy-900 font-bold mb-4 uppercase tracking-tighter">Core Expertise</h2>
                 <div class="w-20 h-1.5 bg-gold-500 mx-auto"></div>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="expertise-card p-10 bg-white border-t-[6px] border-t-navy-900 fade-up-element">
                     <div class="text-3xl mb-6">💻</div>
                     <h3 class="text-xl font-serif font-bold text-navy-900 mb-4 uppercase">ITGC & Cyber</h3>
@@ -186,81 +177,78 @@
         </div>
     </section>
 
-    <section id="experience" class="py-24 lg:py-32 bg-navy-950 text-white">
-        <div class="max-w-4xl mx-auto px-6 lg:px-12">
+    <section id="experience" class="py-32 bg-navy-950 text-white">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-24 fade-up-element">
                 <h2 class="text-4xl md:text-5xl font-serif font-bold uppercase tracking-tight">Professional Journey</h2>
                 <div class="w-20 h-1 bg-gold-500 mx-auto mt-6"></div>
             </div>
-            <div class="space-y-16 border-l border-gold-500/20 pl-8 md:pl-12 relative">
+            <div class="space-y-16 border-l border-gold-500/20 pl-10 relative">
                 <div class="relative fade-up-element">
-                    <div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-3 h-3 bg-gold-500 rounded-full shadow-[0_0_10px_#cda873]"></div>
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-gold-500 rounded-full"></div>
                     <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2023 - 2024</p>
-                    <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Senior Internal Audit Manager</h3>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Senior Internal Audit Manager</h3>
                     <p class="text-gold-500 text-sm mb-4 italic">Sa Sa International Holdings Ltd.</p>
-                    <p class="text-gray-400">Directed internal audit across HK, PRC, Macau, and Malaysia. Modernized retail audit protocols for 200+ outlets.</p>
+                    <p class="text-gray-400">Directed the internal audit function for the Group's operations across HK, PRC, Macau, and Malaysia. Modernized retail audit protocols for 200+ outlets.</p>
                 </div>
                 <div class="relative fade-up-element">
-                    <div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
                     <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2021 - 2023</p>
-                    <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Internal Audit Manager</h3>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Internal Audit Manager</h3>
                     <p class="text-gold-500 text-sm mb-4 italic">Lee Kum Kee Group</p>
-                    <p class="text-gray-400">Managed cross-functional audits covering procurement and sales. Leveraged engineering background for safety policies.</p>
+                    <p class="text-gray-400">Managed cross-functional audits covering procurement, sales, and QA. Leveraged civil engineering background to revamp in-house safety policies.</p>
                 </div>
                 <div class="relative fade-up-element">
-                    <div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
                     <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2012 - 2021</p>
-                    <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Senior Internal Audit Officer</h3>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Senior Internal Audit Officer</h3>
                     <p class="text-gold-500 text-sm mb-4 italic">Crystal International Group Ltd.</p>
-                    <p class="text-gray-400">Spearheaded factory operational audits in SE Asia. Delivered $1M+ improvements in Material Utilization.</p>
+                    <p class="text-gray-400">Spearheaded factory operational audits across Southeast Asia. Delivered $1M+ in performance improvements through Material Utilization analysis.</p>
                 </div>
                 <div class="relative fade-up-element">
-                    <div class="absolute -left-[35px] md:-left-[51px] top-1.5 w-3 h-3 bg-white/10 rounded-full"></div>
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-white/10 rounded-full"></div>
                     <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2007 - 2012</p>
-                    <h3 class="text-2xl md:text-3xl font-serif font-bold mb-1">Senior Auditor</h3>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Senior Auditor</h3>
                     <p class="text-gold-500 text-sm mb-4 italic">BDO & KPMG</p>
-                    <p class="text-gray-400">Led financial audits and US SOX compliance for multinational manufacturing and retail clients.</p>
+                    <p class="text-gray-400">Foundation in US SOX compliance, IPO readiness, and financial statement audits for multinational retail and manufacturing clients.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="cases" class="py-24 lg:py-32 bg-white">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="cases" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-20 fade-up-element">
                 <h2 class="text-4xl font-serif font-bold text-navy-900 uppercase">Strategic Case Studies</h2>
                 <div class="w-20 h-1.5 bg-gold-500 mx-auto mt-6"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="fade-up-element border border-gray-100 pb-8 hover:bg-gray-50 p-8 transition-all hover:shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
                     <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Conflict of Interest</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Exposed a consultant acting as a vendor for $3.3M M&E equipment without CFO authorization during a factory construction project.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Investigation into a factory construction project revealing a consultant acting as a vendor for $3.3M M&E equipment without CFO authorization.</p>
                 </div>
-                <div class="fade-up-element border border-gray-100 pb-8 hover:bg-gray-50 p-8 transition-all hover:shadow-lg">
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
                     <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Cybersecurity (NIST)</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Identified critical flaws in Information Security Programs through intensive NIST-based reviews of enterprise protocols.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Conducted intensive NIST-based reviews identifying critical flaws in data security examination protocols and information security programs.</p>
                 </div>
-                <div class="fade-up-element border border-gray-100 pb-8 hover:bg-gray-50 p-8 transition-all hover:shadow-lg">
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
                     <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Unauthorized Funds</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">Exposed an unauthorized petty cash pool funneling RMB 1 Million via vendor sponsorships for unrecorded expenses.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">Exposed an unauthorized petty cash pool funneling RMB 1 Million via vendor sponsorships used for unrecorded factory expenses.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-navy-950 text-white pt-24 pb-12">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-serif font-bold uppercase mb-8 italic tracking-tighter">Let's Secure The Future.</h2>
-                <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-lg">
-                    <a href="mailto:leukng@gmail.com" class="text-gray-400 hover:text-gold-500 transition-colors">leukng@gmail.com</a>
-                    <p class="text-gray-400">+1 236-889-7868 (CA)</p>
-                    <p class="text-gray-400">+852 6484-2159 (HK)</p>
-                </div>
+    <footer id="contact" class="bg-navy-950 text-white pt-32 pb-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-serif font-bold uppercase mb-12 italic tracking-tighter">Let's Secure The Future.</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
+                <a href="mailto:leukng@gmail.com" class="text-gray-400 hover:text-gold-500 transition-colors">leukng@gmail.com</a>
+                <p class="text-gray-400">+1 236-889-7868 (CA)</p>
+                <p class="text-gray-400">+852 6484-2159 (HK)</p>
             </div>
-            <div class="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-widest font-bold">
-                <p>&copy; 2026 Richard Leuk Ng. All Rights Reserved.</p>
-                <p class="mt-4 md:mt-0">CPA (CA/AU/HK) | CISA | Civil Engineering</p>
+            <div class="border-t border-white/10 pt-12 text-[10px] text-gray-500 uppercase tracking-widest font-bold">
+                <p>&copy; 2026 Richard Leuk Ng. CPA (CA/AU/HK) | CISA | Civil Engineering</p>
             </div>
         </div>
     </footer>
@@ -270,6 +258,7 @@
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
 
+        // Sticky Navbar logic
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
                 navbar.classList.add('bg-navy-950', 'shadow-2xl', 'py-2');
@@ -280,10 +269,12 @@
             }
         });
 
+        // Mobile Menu toggle
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
+        // Scroll Animations (Intersection Observer)
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
