@@ -110,14 +110,14 @@
                 </div>
                 <div class="fade-up-element relative">
                     <div class="aspect-[4/5] bg-gray-100 overflow-hidden rounded-sm shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" class="w-full h-full object-cover grayscale" alt="Richard Ng">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" class="w-full h-full object-cover grayscale" alt="Richard Ng Profile">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-navy-950 text-white overflow-hidden">
+    <section class="py-24 bg-navy-950 text-white">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-16">
                 <div class="flex-1 fade-up-element">
@@ -126,22 +126,18 @@
                     <p class="text-gray-400 text-lg leading-relaxed mb-8">
                         Certified in <strong>Google Prompting Essentials</strong>, I leverage Large Language Models to automate data extraction, enhance risk modeling, and streamline audit reporting. This intersection of technical auditing and AI proficiency allows for higher frequency oversight with greater precision.
                     </p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 rounded-full bg-gold-500/20 flex items-center justify-center">
-                            <span class="text-gold-500 font-bold">✓</span>
-                        </div>
-                        <p class="text-sm font-bold uppercase tracking-widest">Google Prompting Essentials Certified</p>
-                    </div>
                 </div>
                 <div class="flex-1 fade-up-element">
-                    <div class="p-1 border border-white/10 rounded-sm">
-                        <div class="bg-white/5 p-10 backdrop-blur-sm">
-                            <h4 class="text-gold-500 font-bold uppercase tracking-widest text-xs mb-4">Tech Stack</h4>
-                            <div class="flex flex-wrap gap-3">
-                                <span class="px-4 py-2 bg-navy-900 border border-white/10 text-[10px] font-bold uppercase tracking-widest">Generative AI</span>
-                                <span class="px-4 py-2 bg-navy-900 border border-white/10 text-[10px] font-bold uppercase tracking-widest">Python (Data)</span>
-                                <span class="px-4 py-2 bg-navy-900 border border-white/10 text-[10px] font-bold uppercase tracking-widest">OCR Automation</span>
-                                <span class="px-4 py-2 bg-navy-900 border border-white/10 text-[10px] font-bold uppercase tracking-widest">ITGC Frameworks</span>
+                    <div class="p-8 border border-white/10 rounded-sm bg-white/5 backdrop-blur-sm">
+                        <h4 class="text-gold-500 font-bold uppercase tracking-widest text-xs mb-4 text-center">Certified Capabilities</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4">
+                                <span class="text-gold-500">✓</span>
+                                <p class="text-sm">Advanced Prompt Engineering for Audit</p>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-gold-500">✓</span>
+                                <p class="text-sm">AI-Powered Data Visualization</p>
                             </div>
                         </div>
                     </div>
@@ -181,100 +177,79 @@
         </div>
     </section>
 
-    <section id="experience" class="py-32 bg-navy-950 text-white">
-        <div class="max-w-5xl mx-auto px-6 lg:px-8">
-            <h2 class="text-4xl font-serif font-bold uppercase tracking-tight text-center mb-24">Professional Journey</h2>
-            <div class="space-y-24 border-l border-gold-500/20 pl-10 relative">
-                
-                <div class="relative fade-up-element">
-                    <div class="absolute -left-[46px] top-1.5 w-3 h-3 bg-gold-500 rounded-full ring-4 ring-navy-950"></div>
-                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2023 - 2024</p>
-                    <h3 class="text-3xl font-serif font-bold mb-1">Senior Internal Audit Manager</h3>
-                    <p class="text-gold-500 text-sm mb-6 italic">Sa Sa International Holdings Ltd.</p>
-                    <p class="text-gray-400 leading-relaxed text-lg">Directed audit functions across Hong Kong, PRC, Macau, and Malaysia, focusing on inventory controls and operational efficiency.</p>
+    <section id="experience" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 fade-up-element">
+                <h2 class="text-4xl font-serif text-navy-900 font-bold mb-4 uppercase tracking-tighter">Professional Experience</h2>
+                <div class="w-20 h-1.5 bg-gold-500 mx-auto"></div>
+            </div>
+            
+            <div class="space-y-16">
+                <div class="flex flex-col md:flex-row gap-8 fade-up-element border-b border-gray-100 pb-12">
+                    <div class="md:w-1/3">
+                        <p class="text-gold-500 font-bold tracking-widest text-xs uppercase">2023 - 2024</p>
+                        <h3 class="text-2xl font-serif font-bold text-navy-900 mt-2 uppercase">Sa Sa International Holdings Ltd.</h3>
+                        <p class="text-gray-500 text-sm font-bold uppercase tracking-widest">Senior Internal Audit Manager</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-gray-600 leading-relaxed">Directed audit functions across Hong Kong, PRC, Macau, and Malaysia. Modernized retail protocols and inventory controls for multi-regional operations, enhancing operational transparency.</p>
+                    </div>
                 </div>
 
-                <div class="relative fade-up-element">
-                    <div class="absolute -left-[46px] top-1.5 w-3 h-3 bg-white/20 rounded-full ring-4 ring-navy-950"></div>
-                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2021 - 2023</p>
-                    <h3 class="text-3xl font-serif font-bold mb-1">Internal Audit Manager</h3>
-                    <p class="text-gold-500 text-sm mb-6 italic">Lee Kum Kee Group</p>
-                    <p class="text-gray-400 leading-relaxed text-lg">Modernized procurement policies and manufacturing QA protocols through cross-functional risk assessment.</p>
+                <div class="flex flex-col md:flex-row gap-8 fade-up-element border-b border-gray-100 pb-12">
+                    <div class="md:w-1/3">
+                        <p class="text-gold-500 font-bold tracking-widest text-xs uppercase">2021 - 2023</p>
+                        <h3 class="text-2xl font-serif font-bold text-navy-900 mt-2 uppercase">Lee Kum Kee Group</h3>
+                        <p class="text-gray-500 text-sm font-bold uppercase tracking-widest">Internal Audit Manager</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-gray-600 leading-relaxed">Leveraged engineering background to revamp group-wide procurement and manufacturing quality assurance policies through comprehensive cross-functional risk assessment.</p>
+                    </div>
                 </div>
 
-                <div class="relative fade-up-element">
-                    <div class="absolute -left-[46px] top-1.5 w-3 h-3 bg-white/20 rounded-full ring-4 ring-navy-950"></div>
-                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2007 - 2012</p>
-                    <h3 class="text-3xl font-serif font-bold mb-1 uppercase tracking-wider">External Audit Foundations</h3>
-                    <p class="text-gold-500 text-sm mb-6 italic uppercase">Auditor / Senior Auditor | BDO & KPMG</p>
-                    <p class="text-gray-400 leading-relaxed text-lg">Rigorous training in financial reporting standards, IPO readiness, and internal control testing (US SOX) for multinational clients.</p>
+                <div class="flex flex-col md:flex-row gap-8 fade-up-element">
+                    <div class="md:w-1/3">
+                        <p class="text-gold-500 font-bold tracking-widest text-xs uppercase">2007 - 2012</p>
+                        <h3 class="text-2xl font-serif font-bold text-navy-900 mt-2 uppercase text-gold-600">External Audit Foundations</h3>
+                        <p class="text-gray-500 text-sm font-bold uppercase tracking-widest">Auditor / Senior Auditor | BDO & KPMG</p>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-gray-600 leading-relaxed font-medium">Rigorous training in financial reporting standards, IPO readiness, and internal control testing (US SOX) for multinational clients across diverse industry sectors.</p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="py-32 bg-white">
+    <section class="py-32 bg-gray-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row gap-16 items-center">
-                <div class="flex-1 fade-up-element">
-                    <h2 class="text-4xl font-serif text-navy-900 font-bold mb-8 uppercase tracking-tighter">Strategic Impact Highlights</h2>
-                    <ul class="space-y-6">
-                        <li class="flex items-start">
-                            <span class="text-gold-500 mr-4 font-bold">01.</span>
-                            <p class="text-gray-700"><strong>Retail Operations:</strong> Streamlined inventory management and loss prevention across multi-regional outlets in APAC.</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-gold-500 mr-4 font-bold">02.</span>
-                            <p class="text-gray-700"><strong>Tech Governance:</strong> Implemented COBIT-based ITGC frameworks to secure critical financial data systems.</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-gold-500 mr-4 font-bold">03.</span>
-                            <p class="text-gray-700"><strong>Engineering Audit:</strong> Applied Civil Engineering logic to optimize procurement and construction project oversight.</p>
-                        </li>
-                    </ul>
+            <div class="text-center mb-20 fade-up-element">
+                <h2 class="text-4xl font-serif text-navy-900 font-bold mb-4 uppercase tracking-tighter">Strategic Project Highlights</h2>
+                <div class="w-20 h-1.5 bg-gold-500 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="fade-up-element">
+                    <div class="text-gold-500 font-bold mb-2">01.</div>
+                    <h4 class="text-lg font-serif font-bold text-navy-900 mb-3 uppercase">Supply Chain Resilience</h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">Conducted factory-to-retail audits across APACPRODUCTION hubs, identifying critical bottlenecks and strengthening vendor compliance protocols.</p>
                 </div>
-                <div class="flex-1 grid grid-cols-2 gap-4 fade-up-element">
-                    <div class="bg-navy-900 p-8 text-center text-white rounded-sm">
-                        <p class="text-4xl font-serif font-bold mb-2">17+</p>
-                        <p class="text-[10px] uppercase font-bold tracking-widest text-gold-500">Years Experience</p>
-                    </div>
-                    <div class="bg-gray-100 p-8 text-center rounded-sm">
-                        <p class="text-4xl font-serif font-bold mb-2 text-navy-900">30+</p>
-                        <p class="text-[10px] uppercase font-bold tracking-widest text-gray-500">MNC Projects</p>
-                    </div>
+                <div class="fade-up-element">
+                    <div class="text-gold-500 font-bold mb-2">02.</div>
+                    <h4 class="text-lg font-serif font-bold text-navy-900 mb-3 uppercase">ITGC Implementation</h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">Led the rollout of COBIT-aligned IT General Controls for ERP transitions, ensuring data integrity during major system migrations.</p>
+                </div>
+                <div class="fade-up-element">
+                    <div class="text-gold-500 font-bold mb-2">03.</div>
+                    <h4 class="text-lg font-serif font-bold text-navy-900 mb-3 uppercase">Bid Rigging Detection</h4>
+                    <p class="text-sm text-gray-600 leading-relaxed">Developed forensic analytical tools to identify pattern-based fraud in high-value procurement contracts for manufacturing entities.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer id="contact" class="bg-navy-950 text-white pt-32 pb-12 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-            <h2 class="text-5xl md:text-7xl font-serif font-bold uppercase mb-12 tracking-tighter">Let's Secure <br><span class="text-gold-500 italic">The Future.</span></h2>
-            <div class="mb-16">
-                <a href="mailto:leukng@gmail.com" class="px-12 py-5 bg-gold-500 text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-gold-600 transition-all shadow-xl">leukng@gmail.com</a>
-            </div>
-            <div class="pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-widest font-bold">
-                <p>&copy; 2026 Richard Ng.</p>
-                <div class="flex flex-wrap justify-center gap-8 mt-4 md:mt-0">
-                    <p>CPA (Canada) | CPA (Australia) | CISA | BEng Civil Engineering</p>
-                    <a href="https://audit-blog.richardng.com" class="text-gold-500 hover:underline">Internal Audit Blog</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) { entry.target.classList.add('is-visible'); }
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
-        document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-7xl font-serif font-bold uppercase mb-12 tracking-tighter">Secure Your <br><span class="text-gold-500 italic">Financial Integrity.</span></h2>
+                <a href="mailto:leukng@gmail.com" class="px-12 py-5 bg-gold-500 text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-gold-600 transition-all shadow-xl inline-block">le
