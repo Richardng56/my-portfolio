@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -62,7 +61,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans text-gray-800 bg-white antialiased overflow-x-hidden">
-
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="flex justify-between items-center">
@@ -142,7 +140,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="expertise-card p-10 bg-white border-t-[6px] border-t-navy-900 fade-up-element shadow-sm">
                     <h3 class="text-xl font-serif font-bold text-navy-900 mb-4 uppercase">ITGC & Cyber</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">NIST-aligned security audits, COBIT framework implementation, and IT general control testing.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">NIST-aligned security audits, COBIT/ISO27001 framework implementation, and IT general control testing.</p>
                 </div>
                 <div class="expertise-card p-10 bg-white border-t-[6px] border-t-navy-900 fade-up-element shadow-sm">
                     <h3 class="text-xl font-serif font-bold text-navy-900 mb-4 uppercase">Supply Chain</h3>
@@ -154,7 +152,7 @@
                 </div>
                 <div class="expertise-card p-10 bg-white border-t-[6px] border-t-navy-900 fade-up-element shadow-sm">
                     <h3 class="text-xl font-serif font-bold text-navy-900 mb-4 uppercase">Forensics</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed">High-stakes fraud investigation, AML, and procurement kickback detection.</p>
+                    <p class="text-gray-600 text-sm leading-relaxed">High-stakes fraud investigation, big rigging, and procurement kickback detection.</p>
                 </div>
             </div>
         </div>
