@@ -252,4 +252,39 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-20">
                 <h2 class="text-5xl md:text-7xl font-serif font-bold uppercase mb-12 tracking-tighter">Secure Your <br><span class="text-gold-500 italic">Financial Integrity.</span></h2>
-                <a href="mailto:leukng@gmail.com" class="px-12 py-5 bg-gold-500 text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-gold-600 transition-all shadow-xl inline-block">le
+                <a href="mailto:leukng@gmail.com" class="px-12 py-5 bg-gold-500 text-white text-xs font-bold uppercase tracking-[0.3em] hover:bg-gold-600 transition-all shadow-xl inline-block">leukng@gmail.com</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 border-t border-white/10 pt-16 mb-16">
+                <div class="text-center md:text-left">
+                    <h4 class="text-gold-500 text-xs font-bold uppercase tracking-[0.2em] mb-4">Current Hub</h4>
+                    <p class="text-2xl font-serif font-bold uppercase tracking-tight">Vancouver, Canada</p>
+                    <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest font-bold">CPA (Canada) Member</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-gold-500 text-xs font-bold uppercase tracking-[0.2em] mb-4">Operational Base</h4>
+                    <p class="text-2xl font-serif font-bold uppercase tracking-tight">Hong Kong SAR</p>
+                    <p class="text-gray-500 text-xs mt-2 uppercase tracking-widest font-bold">Audit Specialist (APAC Region)</p>
+                </div>
+            </div>
+
+            <div class="pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-widest font-bold border-t border-white/5">
+                <p>&copy; 2026 Richard Ng.</p>
+                <div class="flex flex-wrap justify-center gap-8 mt-4 md:mt-0">
+                    <p>CPA (Canada) | CPA (Australia) | CISA | BEng (Hons)</p>
+                    <a href="https://audit-blog.richardng.com" class="text-gold-500 hover:underline">Internal Audit Blog</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('is-visible'); }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
