@@ -274,7 +274,7 @@
                     <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">AUG 2021 - JAN 2023</p>
                     <h3 class="text-3xl font-serif font-bold mb-1">Internal Audit Manager</h3>
                     <p class="text-gold-500 text-sm mb-6 italic tracking-wide">Lee Kum Kee Group</p>
-                    <p class="text-gray-400 max-w-3xl leading-relaxed">Conducted comprehensive operational audits across global manufacturing and procurement units. Successfully delivered over 30 audit findings and enhanced internal control frameworks through engineering-based process reviews.</p>
+                    <p class="text-gray-400 max-w-3xl leading-relaxed">Reported 30+ findings covering procurement, sales, and QA. Revamped in-house engineering policy leveraging civil engineering background to enhance group-wide safety and operational compliance.</p>
                 </div>
 
                 <div class="relative fade-up-element">
@@ -364,7 +364,6 @@
             if (window.scrollY > 50) {
                 navbar.classList.add('bg-navy-950', 'shadow-2xl', 'py-2');
                 navbar.classList.remove('bg-transparent', 'py-4');
-                navbar.classList.remove('py-2');
             } else {
                 navbar.classList.remove('bg-navy-950', 'shadow-2xl', 'py-2');
                 navbar.classList.add('bg-transparent', 'py-4');
