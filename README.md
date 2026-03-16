@@ -1,4 +1,19 @@
 <html lang="en" class="scroll-smooth" style="scroll-padding-top: 80px;">
+<style>
+    /* This ensures that when you click 'About', it stops 100px before the section 
+       so the header doesn't cover the title */
+    html { 
+        scroll-padding-top: 100px; 
+        visibility: hidden; 
+    }
+    html.loaded { visibility: visible; }
+
+    /* Ensure the navbar has a solid background so text doesn't bleed through it */
+    .nav-solid {
+        background-color: #050a12 !important; /* Your Navy 950 color */
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
