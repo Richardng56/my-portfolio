@@ -5,38 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Leuk Ng | Senior Internal Audit Leader</title>
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            950: '#050a12',
-                            900: '#0a1424',
-                            800: '#11223c',
-                        },
-                        gold: {
-                            400: '#dfc095',
-                            500: '#cda873',
-                            600: '#b89565',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
     <style>
+        /* Hidden until Tailwind is fully initialized */
+        html { visibility: hidden; }
+        html.loaded { visibility: visible; }
+
         .fade-up-element {
             opacity: 0;
             transform: translateY(30px);
@@ -64,6 +39,31 @@
         ::-webkit-scrollbar-track { background: #0a1424; }
         ::-webkit-scrollbar-thumb { background: #cda873; }
     </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 950: '#050a12', 900: '#0a1424', 800: '#11223c' },
+                        gold: { 400: '#dfc095', 500: '#cda873', 600: '#b89565' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+        // Force visibility once the window loads
+        window.addEventListener('load', function() {
+            document.documentElement.classList.add('loaded');
+        });
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans text-gray-800 bg-white antialiased">
 
@@ -123,7 +123,8 @@
                         Bridging <span class="text-gold-500 italic">Engineering Logic</span> with Financial Oversight
                     </h2>
                     <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
-                        <p>With a foundation in Civil Engineering from the UK, I approach Internal Audit as a structural challenge. Over 17 years of experience—spanning from Big 4 public practice (KPMG/BDO) to leading audit functions for multi-billion dollar listed entities—has equipped me with the foresight to detect risks before they manifest.</p>
+                        <p>With a foundation in Civil Engineering from the UK, I approach Internal Audit as a structural challenge. My methodology ensures that governance frameworks are built to withstand the pressures of volatile global markets.</p>
+                        <p>Over 17 years of experience—spanning from Big 4 public practice (KPMG/BDO) to leading audit functions for multi-billion dollar listed entities—has equipped me with the foresight to detect risks before they manifest as liabilities.</p>
                     </div>
                     <div class="grid grid-cols-2 gap-8 mt-12">
                         <div>
@@ -179,3 +180,102 @@
     <section id="experience" class="py-32 bg-navy-950 text-white">
         <div class="max-w-5xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-24 fade-up-element">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold uppercase tracking-tight">Professional Journey</h2>
+                <div class="w-20 h-1 bg-gold-500 mx-auto mt-6"></div>
+            </div>
+            <div class="space-y-16 border-l border-gold-500/20 pl-10 relative">
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-gold-500 rounded-full"></div>
+                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2023 - 2024</p>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Senior Internal Audit Manager</h3>
+                    <p class="text-gold-500 text-sm mb-4">Sa Sa International Holdings Ltd. (SEHK: 178)</p>
+                    <p class="text-gray-400">Directed the internal audit function for operations across HK, PRC, Macau, and Malaysia. Redefined retail audit methodologies for 200+ outlets.</p>
+                </div>
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
+                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2021 - 2023</p>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Internal Audit Manager</h3>
+                    <p class="text-gold-500 text-sm mb-4">Lee Kum Kee Group</p>
+                    <p class="text-gray-400">Managed cross-functional audits covering procurement, sales, and QA. Leveraged engineering background to revamp in-house safety policies.</p>
+                </div>
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
+                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2012 - 2021</p>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Senior Internal Audit Officer</h3>
+                    <p class="text-gold-500 text-sm mb-4">Crystal International Group Ltd. (SEHK: 2232)</p>
+                    <p class="text-gray-400">Spearheaded factory operational audits across Southeast Asia. Delivered $1M+ in performance improvements through Material Utilization analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cases" class="py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 fade-up-element">
+                <h2 class="text-4xl font-serif font-bold text-navy-900 uppercase">Strategic Case Studies</h2>
+                <div class="w-20 h-1.5 bg-gold-500 mx-auto mt-6"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
+                    <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Conflict of Interest</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Investigation into a factory construction project revealing a consultant acting as a vendor for $3.3M M&E equipment without CFO authorization.</p>
+                </div>
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
+                    <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Cybersecurity (NIST)</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Conducted intensive NIST-based reviews identifying critical flaws in data security examination protocols and information security programs.</p>
+                </div>
+                <div class="fade-up-element border-b border-gray-100 pb-8 hover:bg-gray-50 p-6 transition-colors">
+                    <h4 class="text-xl font-serif font-bold text-navy-900 uppercase mb-4">Unauthorized Funds</h4>
+                    <p class="text-gray-600 text-sm leading-relaxed">Exposed an unauthorized petty cash pool funneling RMB 1 Million via vendor sponsorships used for unrecorded factory expenses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-navy-950 text-white pt-32 pb-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-6xl font-serif font-bold uppercase mb-12 italic">Let's Secure The Future.</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
+                <a href="mailto:leukng@gmail.com" class="text-gray-400 hover:text-gold-500">leukng@gmail.com</a>
+                <p class="text-gray-400">+1 236-889-7868 (CA)</p>
+                <p class="text-gray-400">+852 6484-2159 (HK)</p>
+            </div>
+            <div class="border-t border-white/10 pt-12 text-[10px] text-gray-500 uppercase tracking-widest font-bold">
+                <p>&copy; 2026 Richard Leuk Ng. CPA (CA/AU/HK) | CISA | Civil Engineering</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Sticky Navbar logic
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-navy-950', 'shadow-2xl', 'py-2');
+                navbar.classList.remove('bg-transparent', 'py-4');
+            } else {
+                navbar.classList.remove('bg-navy-950', 'shadow-2xl', 'py-2');
+                navbar.classList.add('bg-transparent', 'py-4');
+            }
+        });
+
+        // Mobile Menu toggle
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Scroll Animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
