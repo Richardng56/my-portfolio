@@ -271,6 +271,14 @@
 
                 <div class="relative fade-up-element">
                     <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
+                    <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">AUG 2021 - JAN 2023</p>
+                    <h3 class="text-3xl font-serif font-bold mb-1">Internal Audit Manager</h3>
+                    <p class="text-gold-500 text-sm mb-6 italic tracking-wide">Lee Kum Kee Group</p>
+                    <p class="text-gray-400 max-w-3xl leading-relaxed">Conducted comprehensive operational audits across global manufacturing and procurement units. Successfully delivered over 30 audit findings and enhanced internal control frameworks through engineering-based process reviews.</p>
+                </div>
+
+                <div class="relative fade-up-element">
+                    <div class="absolute -left-[45px] top-1.5 w-3 h-3 bg-white/20 rounded-full"></div>
                     <p class="text-gold-400 text-xs font-bold tracking-widest uppercase mb-2">2012 - 2021</p>
                     <h3 class="text-3xl font-serif font-bold mb-1">Senior Internal Audit Officer</h3>
                     <p class="text-gold-500 text-sm mb-6 italic tracking-wide">Crystal International Group Ltd.</p>
@@ -292,7 +300,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
                 <div class="fade-up-element">
-                    <div class="text-navy-900 font-serif font-bold text-xl uppercase mb-2">CPA (CA)</div>
+                    <div class="text-navy-900 font-serif font-bold text-xl uppercase mb-2">CPA (CA/AU)</div>
                     <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">CPA Ontario, Canada</p>
                 </div>
                 <div class="fade-up-element">
@@ -344,7 +352,7 @@
             
             <div class="border-t border-white/10 pt-12 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-[0.2em] font-bold">
                 <p>&copy; 2026 Richard Leuk Ng. All Rights Reserved.</p>
-                <p class="mt-4 md:mt-0 tracking-[0.1em]">CPA (CA/HK) | CISA | Civil Engineering</p>
+                <p class="mt-4 md:mt-0 tracking-[0.1em]">CPA (CA/AU/HK) | CISA | Civil Engineering</p>
             </div>
         </div>
     </footer>
@@ -356,6 +364,7 @@
             if (window.scrollY > 50) {
                 navbar.classList.add('bg-navy-950', 'shadow-2xl', 'py-2');
                 navbar.classList.remove('bg-transparent', 'py-4');
+                navbar.classList.remove('py-2');
             } else {
                 navbar.classList.remove('bg-navy-950', 'shadow-2xl', 'py-2');
                 navbar.classList.add('bg-transparent', 'py-4');
